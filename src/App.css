@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+body{
+  background: hotpink;
+}
+
+
+.underline{
+  width: 50%;
+  background-color: red;
+  height: 3px;
+  margin: 0;
+}

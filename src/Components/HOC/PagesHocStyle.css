@@ -1,0 +1,47 @@
+.PagesHoc{
+    display: flex;
+    /* flex-direction: column; */
+    margin: auto;
+        width: 90%;
+        flex-wrap: wrap;
+}
+.topStoriesPage{
+    width: 50%;
+}
+.TopPostPage{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.TopStoriesPageSpan,
+.TopPostPage>span{
+    display: inline-block;
+   border-bottom:2px solid #F08080;
+  font-size: 20px;
+  margin: 20px 0;
+  
+  /* padding: 20px; */
+}
+
+h1{
+    margin-left: 5%;
+}
+@media (max-width:650px) {
+    .PagesHoc{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        width: 90%;
+    }
+    .topStoriesPage{
+        width: 100%;
+        margin: 1px;
+    }
+    .TopPostPage{
+        width: 100%;
+        margin: 1px;
+
+    }
+}

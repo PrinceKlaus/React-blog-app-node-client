@@ -1,0 +1,168 @@
+/* ------------------TopStories------------------------ */
+.TopStories {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.TopStories img {
+  object-fit: cover;
+}
+.TopStories > div:not(:nth-last-child(1), :nth-child(1)) {
+  border-top: 1px solid rgb(197, 195, 195);
+}
+/* ------------------LatestArticle------------------------ */
+.LatestArticle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.LatestArticle > div:nth-child(1) {
+  font-size: 28px;
+  font-size: 28px;
+  /* color: darkblue; */
+}
+.LatestArticle > div:not(:nth-child(1)) {
+  font-size: 22px;
+}
+
+.LatestArticle > div:not(:nth-last-child(1), :nth-child(1)) {
+  border-top: 1px solid rgb(197, 195, 195);
+}
+/* ----------------Latest Article Img---------------- */
+.LatestArticleImg {
+  display: inline-block;
+ height: 347px;
+  margin: 0;
+  object-fit: cover;
+  margin-top: 10px;
+}
+/* ------------------Top Post------------------------ */
+.TopPost {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+.TopPost .storieHeading {
+  font-weight: bold;
+  width: 80%;
+}
+
+.TopPost > div:nth-child(1) .type5 .storieImages {
+  max-height: 250px;
+  max-width: 100%;
+  object-position: top;
+  object-fit: cover;
+}
+.TopPost > div:nth-child(1) .type5 {
+  max-height: 300px;
+  max-width: 100%;
+  object-position: top;
+  margin: auto;
+}
+.TopPost > div:not(:nth-child(1)) .type5 {
+  /* color: aquamarine; */
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 30% 70%;
+  height: 100px;
+}
+.TopPost > div:not(:nth-child(1)) .type5 .storieImages {
+  grid-area: 1/1/3/2;
+}
+.TopPost > div:not(:nth-child(1)) .type5 .storieDate {
+  grid-area: 2/2/3/3;
+  display: flex;
+  align-items: flex-end;
+}
+/* .TopPost >div:nth-child(1) .type5 .storieImages{
+    max-height: 300px;
+    max-width: 100%;
+    object-position: top;
+} */
+.adv {
+  min-height: 550px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 2px solid rgb(197, 195, 195); */
+  
+}
+.TopPost .adv{
+height: 400px;
+color: aqua;
+}
+.TopPost > div:not(:nth-child(1)) {
+  border-top: 1px solid rgb(197, 195, 195);
+}
+
+/*-----------------LatestStories---------------------*/
+.LatestStories,
+.TheLatest {
+  display: flex;
+  justify-content: space-around;
+  /* align-items: ; */
+}
+.LatestStories .type2:hover,
+.TheLatest .type3:hover{
+  box-shadow: 4px 2px 4px 0.7px rgb(255, 0, 0);
+  transform: translate(2px,-2px);
+  border-radius:20px ;
+ padding: 4px;
+
+  }
+  .loadMore1{
+    width: fit-content;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid red;
+  }
+  .loadMore1:hover{
+   cursor: pointer;
+  }
+/* .LatestStories .type2 img,
+.TheLatest .type3 img{
+  border-radius:20px ;
+
+  } */
+@media (max-width: 750px) {
+  .LatestStories,
+  .TheLatest {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .LatestStories > div:not(:nth-child(1)),
+  .TheLatest > div:not(:nth-child(1)) {
+    border-top: 1px solid rgb(197, 195, 195);
+  }
+}
+@media (max-width: 600px) {
+  .TopPost > div:nth-child(1) .type5 {
+    max-height: 300px;
+    max-width: 100%;
+    object-position: top;
+  }
+  .TopPost > div:nth-child(1) .type5 .storieImages {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    max-height: 250px;
+    max-width: 80%;
+    height: 70%;
+  }
+  .adv {
+    display: none;
+  }
+
+  .LatestArticle {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: auto;
+  }
+}

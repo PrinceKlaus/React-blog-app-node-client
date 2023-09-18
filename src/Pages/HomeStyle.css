@@ -1,0 +1,47 @@
+
+.mid{
+    display: flex;
+  
+}
+.mid .midFirst{
+    width: 50%;
+}
+.mid .midSecond{
+    width: 50%;
+}
+.mid .midSecond .adv{
+    height: 456px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    width: 98%;
+}
+.mid .midSecond .SectionHoc{
+    display: flex;
+flex-direction: column-reverse;
+}
+.mid .SectionHoc>img{
+    margin-top: 80px;
+
+}
+.mid .midFirst .SectionHoc{
+    margin-top: 30px;
+}
+h1{
+    border-bottom:2px solid #F08080 ;
+    width: fit-content;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+
+@media (max-width:600px){
+    .mid{
+        display: flex;
+      flex-direction: column;
+    } 
+    .mid .midFirst{
+        width: 100%;
+    }
+    .mid .midSecond{
+        width: 100%;
+    }
+}

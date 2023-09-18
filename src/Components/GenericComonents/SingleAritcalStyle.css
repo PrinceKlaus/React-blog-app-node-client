@@ -1,0 +1,331 @@
+.SingleAritcalHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 10px;
+  height: 90px;
+  border-bottom: 2px solid rgb(225, 224, 224);
+}
+.SingleAritcalHeader .header {
+  display: flex;
+  width: fit-content;
+  margin: 0px;
+  height: fit-content;
+}
+.the {
+  font-size: 20px;
+}
+.siren {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  height: 60px;
+  font: normal normal bold 61px Montserrat;
+}
+/*---------------- Single Aritcal Back------------- */
+
+.SingleAritcalBack {
+  width: fit-content;
+  height: 60px;
+  font-size: 40px;
+  color: #000000;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  border: 0px;
+  background: transparent;
+}
+.SingleAritcalBack:hover {
+ cursor: pointer;
+}
+.BackImg {
+  display: flex;
+  align-items: center;
+  width: 30px;
+  height: 50px;
+  margin: 7px 14px 0 0;
+  transform: rotateZ(90deg);
+}
+/* ------------SingleAritcal Heading------------- */
+.SingleAritcalHeading{
+display: flex;
+justify-content: center;
+}
+.SingleAritcalImage{
+  height: 400px;
+}
+  /* ----------------------middle Container------------------------ */
+  .middleContainer{
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+
+  }
+  /* ----------------------clap N Share------------------------ */
+  .clapNShare{
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+    align-items: baseline;
+    width:25%;
+    position: sticky;
+   top: 250px;
+   
+  }
+  .clap1,
+  .share{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid black; */
+    width: 130px;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+  .clap1Img,
+  .shareImg{
+    /* display: inline-block; */
+    color: #0bb2ff;
+   width: 28px;
+   height: 28px;
+   object-fit: cover;
+   margin-right: 10px;
+  }
+/* ------------SingleAritcal Body------------- */
+.SingleAritcalBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  /* margin: auto; */
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* ---------------writer------------------ */
+.writer{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ------------Posted by------------- */
+.PostedBy{
+  width: 60%;
+  flex-wrap: wrap;
+  object-fit: cover;
+
+}
+
+.SingleAritcalBody .PostedBy .ProfileName{
+    font-size: 0.7rem; 
+    white-space: nowrap;
+  object-fit: cover;
+
+}
+.SingleAritcalBody .PostedBy .ProfileDate{
+    font-size: 0.5rem; 
+    white-space: nowrap;
+  object-fit: cover;
+
+
+}
+
+/* ---------------social Media--------------------- */
+.socialMedia{
+  width: 20%;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+/* -----------description--------- */
+.SingleAritcalDescription {
+  margin: 40px 0;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  position: relative;
+}
+/* ----------------show more------------ */
+.showMore{
+    position: absolute;
+    bottom:0;
+    left: 50%;    
+    transform: translate(-50%,50%);
+    background:linear-gradient( white,rgb(197, 195, 195) 50%);
+    /* background-color: rgba(255, 255, 255, 0.1); */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.showLess{
+    background: #0bb2ff;
+    color: white;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.showMore:hover,
+.showLess:hover{
+cursor: pointer;
+}
+/* -------------writer info------------------- */
+.writerInfo {
+  border-top: 2px solid rgb(232, 228, 228);
+  padding-top: 20px;
+  border-bottom: 2px solid rgb(232, 228, 228);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.clap2{
+  font-weight: normal;
+  margin: 20px 0;
+  font-size: 20px;
+}
+/* ----------------More From Siren------------------------- */
+.MoreFromSirenTittle{
+  padding:10px 5%;
+  background: hotpink;
+  margin: 0;
+}
+.MoreFromSiren {
+  display: flex;
+  justify-content: space-around;
+  background: hotpink;
+  border-top: 2px solid #d1cfcf;
+margin-bottom: 20px;
+  
+}
+.MoreFromSiren .type6:hover{
+box-shadow: 4px 2px 4px 0.7px rgb(248, 0, 0);
+transform: translate(2px,-2px);
+border-radius:20px ;
+padding: 4px;
+overflow: hidden;
+}
+.MoreFromSiren .type6 img{
+  border-radius:20px ;
+
+}
+.MoreFromSiren .type6 {
+  margin-top: 10px;
+  width: 25%;
+  height: 300px;
+
+}
+.MoreFromSiren .type6 .storieHeading  {
+overflow: hidden;
+}
+.MoreFromSiren .ProfileDate {
+  font-size: 10px;
+}
+@media (max-width: 600px) {
+    /* ----------------------clap N Share------------------------ */
+    .clapNShare{
+      display: none;
+     
+    }
+    /* ------------SingleAritcal Body------------- */
+.SingleAritcalBody {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  /* ----------------more from siren----------------- */
+  .MoreFromSiren {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: hotpink;
+    height: 500px;
+  }
+  .MoreFromSiren .type6 {
+    width: 90%;
+    max-width: 500px;
+    height: 30%;
+  }
+
+}
+@media (max-width: 550px) {
+  .the {
+    font-size: 10px;
+  }
+  .siren {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    height: 60px;
+    font: normal normal bold 31px Montserrat;
+  }
+  /*---------------- Single Aritcal Back------------- */
+
+  .SingleAritcalBack {
+    width: fit-content;
+    height: 40px;
+    font-size: 20px;
+    color: #000000;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+  }
+  .BackImg {
+    display: flex;
+    align-items: center;
+    width: 10px;
+    height: 20px;
+    margin: 7px 14px 0 0;
+    transform: rotateZ(90deg);
+  }
+}
+
+@media (max-width:400px){
+  /* ---------------writer------------------ */
+  .writer{
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  /* ------------Posted by------------- */
+  .SingleAritcalBody .PostedBy{
+    width: 100%;
+  }
+  .SingleAritcalBody .PostedBy img{
+    object-fit: cover;
+  
+  }
+  
+  .SingleAritcalBody .PostedBy .ProfileName{
+      font-size: 0.7rem; 
+      white-space: nowrap;
+  }
+  .SingleAritcalBody .PostedBy .ProfileDate{
+      font-size: 0.5rem; 
+      white-space: nowrap;
+  }
+  
+  /* ---------------social Media--------------------- */
+  .socialMedia{
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+}

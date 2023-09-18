@@ -1,0 +1,250 @@
+.storieHeading,
+.storieDescription,
+.storiePostBy,
+.storieCounter,
+.storieDate{
+  
+  margin-left: 10px;
+}
+
+#stories{
+  margin-bottom: 15px;
+}
+/* ---------------type1 and type3------------------ */
+.type1,
+.type3 {
+ 
+  width: 25%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid black; */
+  margin: 20px;
+}
+.type1 img,
+.type3 img {
+  max-width: 250px;
+  max-height: 70%;
+  margin-top: 10px;
+}
+/* ---------------type2 ------------------ */
+
+.type2 {
+  max-width: 250px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* border: 2px solid black; */
+  margin: 20px;
+  padding-top: 5px;
+
+}
+.type2 img {
+  display: none;
+}
+/* ---------------type4 ------------------ */
+.type4 {
+  display: grid;
+  grid-template-columns: 35% 65%;
+  grid-template-rows: 33% 34% 33%;
+  /* max-width: 350px; */
+  height: 150px;
+  padding-top: 5px;
+
+}
+.type4 .storieImages {
+  grid-area: 1/1/4/2;
+  max-width: 100%;
+  max-height: 100%;
+}
+.type4 .storieHeading {
+  grid-area: 1/2/2/3;
+  max-width: 100%;
+  line-height: 25px;
+  overflow: hidden;
+}
+
+.type4 .storieDescription {
+  overflow: hidden;
+  max-width: 200px;
+  line-height: 25px;
+  grid-area: 2/2/3/3;
+  font-size: 16px;
+}
+.type4 .storieDate {
+  grid-area: 3/2/4/3;
+  display: flex;
+  align-items: flex-end;
+  font-size: 16px;
+}
+/* -----------------type5---------------- */
+/* .type5{
+    display: grid;
+} */
+.type5 {
+  position: relative;
+  padding-top: 5px;
+
+}
+
+.storieCounter {
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+    z-index: 5;
+    color: gray;
+    font-size: 40px;
+    font-weight: bold;
+    opacity: 0.3;
+  }
+/* -------------------type6-------------------- */
+.type6 {
+  display: grid;
+  grid-template-rows: 60% 20% 20%;
+  /* max-width: 250px; */
+  padding-top: 5px;
+
+}
+.type6 .storieImages {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/*-----------------Load more---------------------*/
+
+.loadMore:hover{
+  cursor: pointer;
+}
+.loadMoreImg{
+  display: inline-block;
+  height: 15px;
+  width: 12px;
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .type1,
+.type3 {
+ 
+  width: 90%;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 2px solid black; */
+  margin: 20px;
+}
+}
+@media (max-width: 600px) {
+  /* -------------type 6----------------- */
+  .type6 {
+    display: grid;
+    grid-template-rows: 50% 50%;
+    grid-template-columns: 60% 40%;
+    max-width: 250px;
+  }
+  .type6 .storieImages {
+    grid-area: 1/2/3/3;
+  }
+  .type6 .storieHeading {
+    overflow: hidden;
+    line-height: 17px;
+    font-size: 16px;
+  }
+  .type6 .PostedBy {
+    grid-area: 2/1/3/2;
+    display: flex;
+    align-items: flex-end;
+    font-size: 12px;
+  }
+  .type6 .ProfileDate {
+    display: none;
+  }
+  .type6 .PostedByImg {
+    display: none;
+  }
+}
+/* ------------------general------------------- */
+.storieHeading {
+  font-weight: bold;
+
+}
+.storieHeading:hover,
+.storieImages:hover{
+  cursor: pointer;
+}
+
+.storieDescription {
+  color: rgb(255, 255, 255);
+  max-width: 250px;
+}
+.storieDate {
+  color: rgb(255, 255, 255);
+  width: 90%;
+}
+.storieDate > span:nth-child(1) {
+  color: rgb(0, 0, 0);
+  max-width: 33%;
+}
+.storieDate > span:nth-child(2) {
+  max-width: 66%;
+  white-space: nowrap;
+}
+
+@media (max-width: 350px) {
+  .type4 {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 33% 34% 33%;
+    /* max-width: 230px; */
+    width: 90%;
+    height: 90px;
+    margin: auto;
+  }
+  .type4 .storieImages {
+    grid-area: 1/1/4/2;
+    max-width: 100%;
+    max-height: 100%;
+  }
+  .type4 .storieHeading {
+    grid-area: 1/2/2/3;
+    max-width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 15px;
+    overflow: hidden;
+  }
+
+  .type4 .storieDescription {
+    /* overflow: hidden; */
+    max-width: 100%;
+    grid-area: 2/2/3/3;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .type4 .storieDate {
+    grid-area: 3/2/4/3;
+    display: flex;
+    font-size: 9px;
+    align-items: flex-end;
+  }
+  /* ----------type5--------- */
+  .type5 .storieDate{
+    font-size: 12px;
+  }
+/* ------------storie counter--------- */
+  .storieCounter {
+    position: absolute;
+    right: 10px;
+    bottom: 0px;
+    z-index: 5;
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    opacity: 0.3;
+  }
+}
