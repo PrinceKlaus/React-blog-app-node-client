@@ -14,7 +14,7 @@ function FilterStoriesData(props) {
  if(props.type==="type3"){//the latest
     return   <Stories id={props.id} type={props.type} images={data.images} heading={data.heading} description={data.description} descriptionLength={'15'} date={data.date} categories={data.categories}/>  
 
-}else if(props.type==="type4"){//top stories
+}else if(props.type==="type4"){//top stories //Bollywood data
     return   <Stories id={props.id} type={props.type} images={data.images} heading={data.heading} description={data.description} descriptionLength={'9'} date={data.date} categories={data.categories}/>
 
 
