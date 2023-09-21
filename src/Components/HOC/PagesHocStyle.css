@@ -17,7 +17,7 @@
 .TopStoriesPageSpan,
 .TopPostPage>span{
     display: inline-block;
-   border-bottom:2px solid #F08080;
+   border-bottom:2px solid blue;
   font-size: 20px;
   margin: 20px 0;
   

@@ -1,11 +1,12 @@
 .footer {
   width: 100%;
   background-color: #0f3460;
-  padding: 100px 0;
+  padding: 28px 0;
   color: #fff;
   background: black;
   display: flex;
   justify-content: space-evenly;
+  margin-top: 1em;
   
 }
 .footerContainer{

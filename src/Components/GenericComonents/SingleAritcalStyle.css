@@ -193,19 +193,19 @@ cursor: pointer;
 /* ----------------More From Siren------------------------- */
 .MoreFromSirenTittle{
   padding:10px 5%;
-  background: hotpink;
+  background: blue;
   margin: 0;
 }
 .MoreFromSiren {
   display: flex;
   justify-content: space-around;
-  background: hotpink;
+  background: blue;
   border-top: 2px solid #d1cfcf;
 margin-bottom: 20px;
   
 }
 .MoreFromSiren .type6:hover{
-box-shadow: 4px 2px 4px 0.7px rgb(248, 0, 0);
+box-shadow: 4px 2px 4px 0.7px black;
 transform: translate(2px,-2px);
 border-radius:20px ;
 padding: 4px;
@@ -250,7 +250,7 @@ overflow: hidden;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    background: hotpink;
+    background: blue;
     height: 500px;
   }
   .MoreFromSiren .type6 {

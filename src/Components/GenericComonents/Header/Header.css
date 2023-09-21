@@ -14,7 +14,11 @@ cursor: pointer;
 .the {
   width: fit-content;
   height: fit-content;
-  transform: matrix(0, -1, 1, 0, 0, 0);
+  transform: matrix(0, -1, 1, 0, 0, 0); 
+  /* 0 1 tx
+    -1 0 ty
+     0 0 0 */
+    
   font-size: 21px;
   color: #000000;
   padding-top: 14px;
@@ -100,7 +104,7 @@ cursor: pointer;
     width: 100%;
     height: 200px;
     position: absolute;
-    background: hotpink;
+    background: blue;
     top: 80px;
     right: 0px;
     z-index: 2;
@@ -109,7 +113,7 @@ cursor: pointer;
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    box-shadow: 0px -0.3px 0.5px 0px rgb(255, 0, 0);
+    box-shadow: 0px -0.3px 0.5px 0px white;
   }
   .openNav > .nonActiveNav:nth-child(n) {
     width: 100vw;
@@ -124,14 +128,14 @@ cursor: pointer;
     justify-content: space-between;
     width: 40px;
     height: 28px;
-    background:  hotpink;
+    background:  blue;
   }
 .hamburger:hover{
   cursor: pointer;
 }
   .closeHamburger:nth-child(1) {
     height: 16.6%;
-    background: #ff0000;
+    background: white;
     animation: Open1 1s ease-out 0s forwards;
   }
   @keyframes Open1 {
@@ -148,7 +152,7 @@ cursor: pointer;
   }
   .closeHamburger:nth-child(2) {
     height: 16.6%;
-    background:  rgb(255, 0, 0);
+    background:  white;
     animation: Open2 1s ease-out 0s forwards;
     animation-duration: 1s;
   }
@@ -166,7 +170,7 @@ cursor: pointer;
   }
   .closeHamburger:nth-child(3) {
     height: 16.6%;
-    background:  rgb(255, 0, 0);
+    background:  white;
     animation: Open3 1s ease-out 0s forwards;
   }
   @keyframes Open3 {
@@ -188,7 +192,7 @@ cursor: pointer;
   .openHamburger:nth-child(1) {
     width: 28px;
     height: 16.6%;
-    background:  rgb(255, 0, 0);
+    background:  white;
     animation: Cross1 1s ease-out 0s forwards;
   }
 
@@ -202,7 +206,7 @@ cursor: pointer;
     width: 28px;
     height: 16.6%;
     animation: cross2 0.5s ease-out 0s 1 forwards;
-    background:  rgb(255, 0, 0);
+    background: white;
   }
 
   @keyframes cross2 {

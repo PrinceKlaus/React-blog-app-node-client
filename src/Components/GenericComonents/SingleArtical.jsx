@@ -21,6 +21,7 @@ const SingleArtical = () => {
 const RandomImg1= Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
 const RandomImg2= Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
 const RandomImg3= Math.floor(NewsArrayIndex.NewsId/15.01 )*15+Math.floor(Math.random()*14)+1
+// 0-1 = 0*14 - 1*14 + 1 
 // 1-15=bolly   // 5/15.01==>0.3==>0=>0*15=>0+random(1-15)
 // 16-30=holly  // 20/15.01==>1.3 ==>1=>1*15=>15+random(1-15)
 // 31-45=tech   // ==>2.something==>2=>2*15=>30+random(1-15)
