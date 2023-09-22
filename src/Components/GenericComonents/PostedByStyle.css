@@ -23,7 +23,7 @@
 .ProfileDate{
     display: flex;
     align-items: flex-start;
-    color: rgb(255, 255, 255);
+    color: black;
 
 }
 @media (max-width:300px) {

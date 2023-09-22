@@ -193,13 +193,13 @@ cursor: pointer;
 /* ----------------More From Siren------------------------- */
 .MoreFromSirenTittle{
   padding:10px 5%;
-  background: blue;
+  background: white;
   margin: 0;
 }
 .MoreFromSiren {
   display: flex;
   justify-content: space-around;
-  background: blue;
+  background: white;
   border-top: 2px solid #d1cfcf;
 margin-bottom: 20px;
   

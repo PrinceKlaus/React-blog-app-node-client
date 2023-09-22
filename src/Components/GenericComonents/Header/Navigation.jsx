@@ -28,12 +28,12 @@ function Navigation() {
  <div className={className}></div>
  </div>
  <div className={navClassName}>
-    <NavLink  onClick={handleClick} to='/'          style={({ isActive }) => ({  color: isActive ? 'white' : 'black' })} >Home</NavLink>
-    <NavLink  onClick={handleClick} to='/Bollywood' style={({ isActive }) => ({  color: isActive ? 'white' : 'black' })} >Bollywood</NavLink>
-    <NavLink  onClick={handleClick} to='/Hollywood' style={({ isActive }) => ({  color: isActive ? 'white' : 'black' })} >Hollywood</NavLink>
-    <NavLink  onClick={handleClick} to='/Technology'style={({ isActive }) => ({  color: isActive ? 'white' : 'black' })} >Technology</NavLink>
-    <NavLink  onClick={handleClick} to='/Fitness'   style={({ isActive }) => ({  color: isActive ? 'white' : 'black' })} >Fitness</NavLink>
-    <NavLink  onClick={handleClick} to='/Food'      style={({ isActive }) => ({  color: isActive ? 'white' : 'black' })} >Food</NavLink>
+    <NavLink  onClick={handleClick} to='/'          style={({ isActive }) => ({  color: isActive ? 'red' : 'black' })} >Home</NavLink>
+    <NavLink  onClick={handleClick} to='/Bollywood' style={({ isActive }) => ({  color: isActive ? 'red' : 'black' })} >Bollywood</NavLink>
+    <NavLink  onClick={handleClick} to='/Hollywood' style={({ isActive }) => ({  color: isActive ? 'red' : 'black' })} >Hollywood</NavLink>
+    <NavLink  onClick={handleClick} to='/Technology'style={({ isActive }) => ({  color: isActive ? 'red' : 'black' })} >Technology</NavLink>
+    <NavLink  onClick={handleClick} to='/Fitness'   style={({ isActive }) => ({  color: isActive ? 'red' : 'black' })} >Fitness</NavLink>
+    <NavLink  onClick={handleClick} to='/Food'      style={({ isActive }) => ({  color: isActive ? 'red' : 'black' })} >Food</NavLink>
   </div>
 
 
