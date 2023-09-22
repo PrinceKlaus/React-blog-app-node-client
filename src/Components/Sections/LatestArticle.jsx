@@ -14,7 +14,7 @@ const LatestArticle = () => {
 <FilterStoriesData type={"type4"} id={13} />       
 <FilterStoriesData type={"type4"} id={54} />        
 
-    <img src={data[32].images} alt="not found" className='LatestArticleImg' />
+    <img src={data[35].images} alt="not found" className='LatestArticleImg' />
     </div>
 </>
 
