@@ -3,6 +3,7 @@ import './HeaderImageStyle.css'
 import { NewsData } from '../Assets/NewsData'
 function HeaderImage() { 
 const data=useContext(NewsData)
+console.log(data, "newsdataa")
 
 
   return (
