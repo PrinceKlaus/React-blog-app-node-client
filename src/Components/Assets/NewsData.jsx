@@ -7,7 +7,7 @@ function NewsDataa(props){
 
   useEffect(()=> {
     axios
-    .get("http://react-blog-app-node.onrender.com/api/blogdata")
+    .get("https://react-blog-app-node.onrender.com/api/blogdata")
     // .get("http://localhost:5000/api/blogdata")
     .then((res) => 
     {setData(res.data)
